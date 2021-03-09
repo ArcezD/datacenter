@@ -61,7 +61,7 @@ resource "aws_instance" "unifi_controller" {
   vpc_security_group_ids = [aws_security_group.unifi-sg.id]
 
   tags = {
-    Name = "${random_pet.pet.id}-vm",
+    Name       = "${random_pet.pet.id}-vm",
     Repository = var.repo_url
   }
 }

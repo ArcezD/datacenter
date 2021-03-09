@@ -5,7 +5,7 @@ terraform {
       version = "~> 3.0"
     }
   }
-  
+
   backend "remote" {
     organization = "arce-cr"
     workspaces {
